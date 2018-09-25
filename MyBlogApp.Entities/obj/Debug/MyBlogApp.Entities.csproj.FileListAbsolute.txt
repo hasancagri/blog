@@ -1,0 +1,17 @@
+C:\Users\Çağrı\Desktop\MyBlogApp\MyBlogApp.Entities\bin\Debug\MyBlogApp.Entities.dll
+C:\Users\Çağrı\Desktop\MyBlogApp\MyBlogApp.Entities\bin\Debug\MyBlogApp.Entities.pdb
+C:\Users\Çağrı\Desktop\MyBlogApp\MyBlogApp.Entities\bin\Debug\MyBlogApp.Core.dll
+C:\Users\Çağrı\Desktop\MyBlogApp\MyBlogApp.Entities\bin\Debug\AutoMapper.dll
+C:\Users\Çağrı\Desktop\MyBlogApp\MyBlogApp.Entities\bin\Debug\EntityFramework.dll
+C:\Users\Çağrı\Desktop\MyBlogApp\MyBlogApp.Entities\bin\Debug\System.ValueTuple.dll
+C:\Users\Çağrı\Desktop\MyBlogApp\MyBlogApp.Entities\bin\Debug\MyBlogApp.Core.pdb
+C:\Users\Çağrı\Desktop\MyBlogApp\MyBlogApp.Entities\bin\Debug\MyBlogApp.Core.dll.config
+C:\Users\Çağrı\Desktop\MyBlogApp\MyBlogApp.Entities\bin\Debug\AutoMapper.pdb
+C:\Users\Çağrı\Desktop\MyBlogApp\MyBlogApp.Entities\bin\Debug\AutoMapper.xml
+C:\Users\Çağrı\Desktop\MyBlogApp\MyBlogApp.Entities\bin\Debug\EntityFramework.xml
+C:\Users\Çağrı\Desktop\MyBlogApp\MyBlogApp.Entities\bin\Debug\System.ValueTuple.xml
+C:\Users\Çağrı\Desktop\MyBlogApp\MyBlogApp.Entities\obj\Debug\MyBlogApp.Entities.csprojResolveAssemblyReference.cache
+C:\Users\Çağrı\Desktop\MyBlogApp\MyBlogApp.Entities\obj\Debug\MyBlogApp.Entities.csproj.CoreCompileInputs.cache
+C:\Users\Çağrı\Desktop\MyBlogApp\MyBlogApp.Entities\obj\Debug\MyBlogApp.Entities.csproj.CopyComplete
+C:\Users\Çağrı\Desktop\MyBlogApp\MyBlogApp.Entities\obj\Debug\MyBlogApp.Entities.dll
+C:\Users\Çağrı\Desktop\MyBlogApp\MyBlogApp.Entities\obj\Debug\MyBlogApp.Entities.pdb

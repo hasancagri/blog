@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E28EDF92-D06F-4190-A3A5-7921BC80C81D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MyBlogApp.MSSQL.DataAccess</RootNamespace>
+    <AssemblyName>MyBlogApp.MSSQL.DataAccess</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EntityFramework\Concrete\Contexts\MyBlogAppContext.cs" />
+    <Compile Include="EntityFramework\Concrete\EfEtiketDal.cs" />
+    <Compile Include="EntityFramework\Concrete\EfKategoriDal.cs" />
+    <Compile Include="EntityFramework\Concrete\EfMakaleDal.cs" />
+    <Compile Include="EntityFramework\Concrete\EfUyeDal.cs" />
+    <Compile Include="EntityFramework\Concrete\EfYetkiDal.cs" />
+    <Compile Include="EntityFramework\Concrete\EfYorumDal.cs" />
+    <Compile Include="EntityFramework\Concrete\Mapping\EtiketMap.cs" />
+    <Compile Include="EntityFramework\Concrete\Mapping\KategoriMap.cs" />
+    <Compile Include="EntityFramework\Concrete\Mapping\MakaleMap.cs" />
+    <Compile Include="EntityFramework\Concrete\Mapping\UyeMap.cs" />
+    <Compile Include="EntityFramework\Concrete\Mapping\YetkiMap.cs" />
+    <Compile Include="EntityFramework\Concrete\Mapping\YorumMap.cs" />
+    <Compile Include="Migrations\201809031753598_CreateDatabase.cs" />
+    <Compile Include="Migrations\201809031753598_CreateDatabase.Designer.cs">
+      <DependentUpon>201809031753598_CreateDatabase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="EntityFramework\Abstract\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MyBlogApp.Core\MyBlogApp.Core.csproj">
+      <Project>{B91C0E91-3E28-4420-ADD7-54E8D463FB59}</Project>
+      <Name>MyBlogApp.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyBlogApp.DataAccess\MyBlogApp.DataAccess.csproj">
+      <Project>{7013E92B-F3DE-40D5-9CF7-556C9BC6B1B3}</Project>
+      <Name>MyBlogApp.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyBlogApp.Entities\MyBlogApp.Entities.csproj">
+      <Project>{AA41E26B-1AF3-4CCC-9443-2FDB633BB4CF}</Project>
+      <Name>MyBlogApp.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201809031753598_CreateDatabase.resx">
+      <DependentUpon>201809031753598_CreateDatabase.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

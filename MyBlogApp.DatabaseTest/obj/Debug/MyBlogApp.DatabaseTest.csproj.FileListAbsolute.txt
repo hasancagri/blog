@@ -1,0 +1,12 @@
+C:\Users\Çağrı\Desktop\MyBlogApp\MyBlogApp.DatabaseTest\bin\Debug\MyBlogApp.DatabaseTest.dll.config
+C:\Users\Çağrı\Desktop\MyBlogApp\MyBlogApp.DatabaseTest\bin\Debug\MyBlogApp.DatabaseTest.dll
+C:\Users\Çağrı\Desktop\MyBlogApp\MyBlogApp.DatabaseTest\bin\Debug\MyBlogApp.DatabaseTest.pdb
+C:\Users\Çağrı\Desktop\MyBlogApp\MyBlogApp.DatabaseTest\bin\Debug\EntityFramework.dll
+C:\Users\Çağrı\Desktop\MyBlogApp\MyBlogApp.DatabaseTest\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Çağrı\Desktop\MyBlogApp\MyBlogApp.DatabaseTest\bin\Debug\EntityFramework.xml
+C:\Users\Çağrı\Desktop\MyBlogApp\MyBlogApp.DatabaseTest\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Çağrı\Desktop\MyBlogApp\MyBlogApp.DatabaseTest\obj\Debug\MyBlogApp.DatabaseTest.csprojResolveAssemblyReference.cache
+C:\Users\Çağrı\Desktop\MyBlogApp\MyBlogApp.DatabaseTest\obj\Debug\MyBlogApp.DatabaseTest.csproj.CoreCompileInputs.cache
+C:\Users\Çağrı\Desktop\MyBlogApp\MyBlogApp.DatabaseTest\obj\Debug\MyBlogApp.DatabaseTest.csproj.CopyComplete
+C:\Users\Çağrı\Desktop\MyBlogApp\MyBlogApp.DatabaseTest\obj\Debug\MyBlogApp.DatabaseTest.dll
+C:\Users\Çağrı\Desktop\MyBlogApp\MyBlogApp.DatabaseTest\obj\Debug\MyBlogApp.DatabaseTest.pdb

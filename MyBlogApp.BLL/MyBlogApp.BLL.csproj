@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DE2DFAC8-09D3-4F3B-9238-6E72912EF29E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MyBlogApp.BLL</RootNamespace>
+    <AssemblyName>MyBlogApp.BLL</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject, Version=3.3.4.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ninject.3.3.4\lib\net45\Ninject.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Concrete\Managers\EtiketManager.cs" />
+    <Compile Include="Concrete\Managers\KategoriManager.cs" />
+    <Compile Include="Concrete\Managers\MakaleManager.cs" />
+    <Compile Include="Concrete\Managers\UyeManager.cs" />
+    <Compile Include="Concrete\Managers\YetkiManager.cs" />
+    <Compile Include="Concrete\Managers\YorumManager.cs" />
+    <Compile Include="DependencyResolvers\Ninject\BusinessModule.cs" />
+    <Compile Include="DependencyResolvers\Ninject\InstanceFactory.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Abstract\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MyBlogApp.Core\MyBlogApp.Core.csproj">
+      <Project>{b91c0e91-3e28-4420-add7-54e8d463fb59}</Project>
+      <Name>MyBlogApp.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyBlogApp.DataAccess\MyBlogApp.DataAccess.csproj">
+      <Project>{7013E92B-F3DE-40D5-9CF7-556C9BC6B1B3}</Project>
+      <Name>MyBlogApp.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyBlogApp.Entities\MyBlogApp.Entities.csproj">
+      <Project>{AA41E26B-1AF3-4CCC-9443-2FDB633BB4CF}</Project>
+      <Name>MyBlogApp.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyBlogApp.Interfaces\MyBlogApp.Interfaces.csproj">
+      <Project>{41FD4141-8CDC-47A7-8DE6-F25936969FFC}</Project>
+      <Name>MyBlogApp.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyBlogApp.MSSQL.DataAccess\MyBlogApp.MSSQL.DataAccess.csproj">
+      <Project>{E28EDF92-D06F-4190-A3A5-7921BC80C81D}</Project>
+      <Name>MyBlogApp.MSSQL.DataAccess</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
